@@ -1,0 +1,15 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  margin: 5%;
+  height: 400px;
+  width: 700px;
+  border-radius: 10px;
+  flex: center;
+  background-color: pink;
+}
