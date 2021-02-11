@@ -1,53 +1,37 @@
-import React, { useEffect } from "react";
-import "./navbar.css";
-import Logo from "./../img/logo.svg";
+import React, { Component } from 'react';
+import "./navbar.css"
+import { Link } from 'react-scroll'
 
-const Navbar = () => {
-  const [scrolled, setScrolled] = React.useState(false);
-
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 200) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
+export default class NavBar extends Component {
+    state = {
+        shadowScroll: '0 0 0',
     }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  });
 
-  let x = ["navbar"];
-  if (scrolled) {
-    x.push("scrolled");
-  }
-  return (
-    <header className={x.join(" ")}>
-      <div className="logo">
-        <img src={Logo} alt="Logo" title="Logo" />
-      </div>
+    listenScrollEvent = e => {
+        if (window.scrollY > 120) {
+            this.setState({
+                height: '80px'
+            })
+        } else {
+            this.setState({
+                height: '120px'
+            })
+        }
+    }
 
-      <nav className="navigation">
-        <ul>
-          <li>
-            <a href="#post1">Home</a>
-          </li>
-          <li>
-            <a href="#post3">About</a>
-          </li>
-          <li>
-            <a href="#post4">Work</a>
-          </li>
-          <li>
-            <a href="#post2">Medium</a>
-          </li>
-          <li>
-            <a href="#post5">Contact me</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  );
-};
+    componentDidMount() {
+        window.addEventListener('scroll', this.listenScrollEvent)
+    }
 
-export default Navbar;
+    render() {
+        return (
+            <div style={{ height: this.state.height }} className='NavBar'>
+                <div className='logo'>LOGO</div>
+                <div className='item'>Folio</div>
+                <div className='item'>About</div>
+                <div className='item'>Blog</div>
+                <button className='buttonItem'>Contact me</button>
+            </div>
+        );
+    }
+}

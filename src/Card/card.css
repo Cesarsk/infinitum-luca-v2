@@ -7,9 +7,9 @@
 
 .box {
   margin: 5%;
-  height: 400px;
-  width: 700px;
-  border-radius: 10px;
+  height: 50em;
+  width: 80%;
+  border-radius: 20px;
   flex: center;
-  background-color: pink;
+  background-color: cyan;
 }
