@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./navbar.css"
 import { Link } from 'react-scroll'
+import logo from '../img/logo.png'
 
 export default class NavBar extends Component {
     state = {
@@ -26,10 +27,11 @@ export default class NavBar extends Component {
     render() {
         return (
             <div style={{ height: this.state.height }} className='NavBar'>
-                <div className='logo'>LOGO</div>
+                {/* <img className='logo' src={logo} /> */}
+                <div className='logo'>Welcome</div>
                 <div className='item'>Folio</div>
                 <div className='item'>About</div>
-                <div className='item'>Blog</div>
+                <div className='blog'>Blog</div>
                 <button className='buttonItem'>Contact me</button>
             </div>
         );

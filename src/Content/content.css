@@ -1,20 +1,30 @@
 .Content {
+  font-family: 'Work Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 25px;
 }
 
 .preTitle {
   margin-top: 200px;
-  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -0.3vh;
+  font-size: 1.6vw;
 }
 
 .mainTitle {
-  font-size: 130px;
-  margin-bottom: 50px;
+  font-weight: 500;
+  letter-spacing: -1vh;
+  font-size: 10vw;
+  margin-bottom: -50px;
+}
+
+.mainTitle2 {
+  font-weight: 500;
+  letter-spacing: -1vh;
+  font-size: 10vw;
 }
 
 .blackseparator {
@@ -28,9 +38,13 @@
   color: white;
 }
 
-.contact {
+.contactbtn {
+  font-family: 'Work Sans', sans-serif;
   margin: 1%;
+  font-size: large;
+  font-weight: 600;
   padding: 20px;
+  width: 150px;
   border-radius: 10px;
   background-color: black;
   color: white;
