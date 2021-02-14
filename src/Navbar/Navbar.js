@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import "./navbar.css"
-import { Link } from 'react-scroll'
-import logo from '../img/logo.png'
 
 export default class NavBar extends Component {
     state = {
@@ -27,11 +25,10 @@ export default class NavBar extends Component {
     render() {
         return (
             <div style={{ height: this.state.height }} className='NavBar'>
-                {/* <img className='logo' src={logo} /> */}
                 <div className='logo'>Welcome</div>
-                <div className='item'>Folio</div>
-                <div className='item'>About</div>
-                <div className='blog'>Blog</div>
+                <div className='item'><a href="https://lucacesarano.medium.com" class="link">Folio</a></div>
+                <div className='item'><a href="https://lucacesarano.medium.com" class="link">About</a></div>
+                <div className='blog'><a href="https://lucacesarano.medium.com" class="link">Blog</a></div>
                 <button className='buttonItem'>Contact me</button>
             </div>
         );
