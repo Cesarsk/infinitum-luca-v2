@@ -1,3 +1,10 @@
+MY PORTFOLIO V2 that will replace my current website hosted at https://lucacesarano.com
+
+This website is made with React JS.
+
+# TO DO LIST
+    [] Animate Nav Bar Scroll
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

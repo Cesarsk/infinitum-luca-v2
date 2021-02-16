@@ -8,8 +8,8 @@ export default function Content() {
       <div className="mainTitle2">Cesarano</div>
       <button className="contactbtn">Hit me up!</button>
       <div className="blackseparator"></div>
-      <h2>Infinitum is my personal world</h2>
-      <h2>You can learn about me and check my projects</h2>
+      <div className="header2">What I worked</div>
+      <div className="text2">Bringing imaginary to reality toward the art of engineering. Will is essential in order to make everything possible. Check out my projects and enter in contact with me and my world</div>
     </div>
   );
 }

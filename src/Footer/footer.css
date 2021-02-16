@@ -1,0 +1,50 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    align-items: center;
+    align-content: stretch;
+    text-align: center;
+}
+
+.sentence {
+  width: 100%;
+  color: grey;
+  display: flex;
+  font-size: 60px;
+}
+
+.social {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    align-content: stretch;
+}
+
+.socialItem {
+    margin-inline: 15px;
+    margin-top: 75px;
+}
+
+a.linkFooter {
+    position: relative;
+    text-decoration: none;
+    color: white;
+  }
+  
+a.linkFooter::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    background-color: white;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+  
+  a.linkFooter:hover::before {
+    visibility: visible;
+    width: 100%;
+}

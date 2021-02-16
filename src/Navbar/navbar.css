@@ -8,6 +8,7 @@
   font-size: 18px;
   font-weight: 400;
   background-color: white;
+  transition: 'top 0.6s';
   font-family: 'Work Sans', sans-serif;
   /* Set the navbar to fixed position */
   position: fixed;
